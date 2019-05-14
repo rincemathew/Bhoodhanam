@@ -1,52 +1,45 @@
 {
   "project_info": {
-    "project_number": "493099117350",
-    "firebase_url": "https://bhoodhanam-11a54.firebaseio.com",
-    "project_id": "bhoodhanam-11a54",
-    "storage_bucket": "bhoodhanam-11a54.appspot.com"
+    "project_number": "546151892424",
+    "firebase_url": "https://bhoodhanam-d5433.firebaseio.com",
+    "project_id": "bhoodhanam-d5433",
+    "storage_bucket": "bhoodhanam-d5433.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:493099117350:android:b07182fcb73f0d7d",
+        "mobilesdk_app_id": "1:546151892424:android:b07182fcb73f0d7d",
         "android_client_info": {
           "package_name": "com.example.rincemathew.bhoodhanam"
         }
       },
       "oauth_client": [
         {
-          "client_id": "493099117350-ifs6p7nsap2pu36ug3253acio5vd7768.apps.googleusercontent.com",
+          "client_id": "546151892424-pqkbclngnk684a254u8p0vmue8flf3tl.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.rincemathew.bhoodhanam",
-            "certificate_hash": "2da75532203aeff87f3314a06952e6b067e7a0e9"
+            "certificate_hash": "cf8cfb7ce5142e175d524293564e49051a1ed6f2"
           }
         },
         {
-          "client_id": "493099117350-po8cfamgkv8qmu4r3rp2lmpbamhpuogg.apps.googleusercontent.com",
+          "client_id": "546151892424-pvv064d81f4mluq0r0c1ifpb4tqqbd8n.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCV-3zF7MYQiU5WPajz2S0Lg7zcCvBW6MI"
+          "current_key": "AIzaSyAIGNT8o2ddcUPmZqqFX6OdNerEqSiG3hg"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "493099117350-po8cfamgkv8qmu4r3rp2lmpbamhpuogg.apps.googleusercontent.com",
+              "client_id": "546151892424-pvv064d81f4mluq0r0c1ifpb4tqqbd8n.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }

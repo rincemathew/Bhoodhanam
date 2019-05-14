@@ -14,11 +14,10 @@ import android.widget.ListView;
 
 public class CallingOption extends AppCompatActivity {
     ListView listView;
-    String[] mobileArray = {"sudeesh", "bijesh", "abi",
-            "don", "gokul", "akhil", "rince"};
+    String[] mobileArray = {"A+ve    Nikhil", "A+ve   Ratheesh T.S", "A+ve    Ranjith M.S", "A+ve    Binoop K",
+            "A+ve    Shabeer K", "A+ve    Nikhil P.R", "A+ve    Sahid K.V","A+ve    Shameer",
+            "A+ve    Sujith M.S","A+ve    Jayesh","A+ve    Sajan"};
 
-
-    String importantdays = "പ്രധാന ദിനങ്ങൾ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +34,7 @@ public class CallingOption extends AppCompatActivity {
                                     int position, long id) {
                 if (position == 0) {
                     final int REQUEST_PHONE_CALL = 1;
-                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9544110008"));
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9446349546"));
                     if (ContextCompat.checkSelfPermission(CallingOption.this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                         ActivityCompat.requestPermissions(CallingOption.this, new String[]{android.Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
                     }
@@ -47,7 +46,7 @@ public class CallingOption extends AppCompatActivity {
 
                 if (position == 1) {
                     final int REQUEST_PHONE_CALL = 1;
-                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9544110008"));
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9048952925"));
                     if (ContextCompat.checkSelfPermission(CallingOption.this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                         ActivityCompat.requestPermissions(CallingOption.this, new String[]{android.Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
                     }
@@ -60,7 +59,7 @@ public class CallingOption extends AppCompatActivity {
 
                 if (position == 2) {
                     final int REQUEST_PHONE_CALL = 1;
-                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9544110008"));
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9747928088"));
                     if (ContextCompat.checkSelfPermission(CallingOption.this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                         ActivityCompat.requestPermissions(CallingOption.this, new String[]{android.Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
                     }
@@ -73,7 +72,7 @@ public class CallingOption extends AppCompatActivity {
 
                 if (position == 3) {
                     final int REQUEST_PHONE_CALL = 1;
-                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9544110008"));
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9745686363"));
                     if (ContextCompat.checkSelfPermission(CallingOption.this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                         ActivityCompat.requestPermissions(CallingOption.this, new String[]{android.Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
                     }
@@ -85,14 +84,84 @@ public class CallingOption extends AppCompatActivity {
                 }
 
                 if (position == 4) {
+                    final int REQUEST_PHONE_CALL = 1;
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "966535671135"));
+                    if (ContextCompat.checkSelfPermission(CallingOption.this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                        ActivityCompat.requestPermissions(CallingOption.this, new String[]{android.Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
+                    }
+                    else
+                    {
+                        startActivity(intent);
+                    }
 
                 }
                 if (position == 5) {
-
+                    final int REQUEST_PHONE_CALL = 1;
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9633228830"));
+                    if (ContextCompat.checkSelfPermission(CallingOption.this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                        ActivityCompat.requestPermissions(CallingOption.this, new String[]{android.Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
+                    }
+                    else
+                    {
+                        startActivity(intent);
+                    }
                 }
                 if (position == 6) {
-
+                    final int REQUEST_PHONE_CALL = 1;
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9633394565"));
+                    if (ContextCompat.checkSelfPermission(CallingOption.this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                        ActivityCompat.requestPermissions(CallingOption.this, new String[]{android.Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
+                    }
+                    else
+                    {
+                        startActivity(intent);
+                    }
                 }
+                if (position == 7) {
+                    final int REQUEST_PHONE_CALL = 1;
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9446949301"));
+                    if (ContextCompat.checkSelfPermission(CallingOption.this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                        ActivityCompat.requestPermissions(CallingOption.this, new String[]{android.Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
+                    }
+                    else
+                    {
+                        startActivity(intent);
+                    }
+                }
+                if (position == 8) {
+                    final int REQUEST_PHONE_CALL = 1;
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9476959795"));
+                    if (ContextCompat.checkSelfPermission(CallingOption.this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                        ActivityCompat.requestPermissions(CallingOption.this, new String[]{android.Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
+                    }
+                    else
+                    {
+                        startActivity(intent);
+                    }
+                }
+                if (position == 9) {
+                    final int REQUEST_PHONE_CALL = 1;
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9961255378"));
+                    if (ContextCompat.checkSelfPermission(CallingOption.this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                        ActivityCompat.requestPermissions(CallingOption.this, new String[]{android.Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
+                    }
+                    else
+                    {
+                        startActivity(intent);
+                    }
+                }
+                if (position == 10) {
+                    final int REQUEST_PHONE_CALL = 1;
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9447353052"));
+                    if (ContextCompat.checkSelfPermission(CallingOption.this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                        ActivityCompat.requestPermissions(CallingOption.this, new String[]{android.Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
+                    }
+                    else
+                    {
+                        startActivity(intent);
+                    }
+                }
+
 
             }
         });

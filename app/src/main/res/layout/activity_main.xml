@@ -4,22 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context="com.example.rincemathew.bhoodhanam.MainActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
 
     <TextView
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
         android:fontFamily="sans-serif-smallcaps"
-        android:text="@string/app_name"
-        android:textSize="20sp" />
+        android:layout_marginTop="50dp"
+        android:text="@string/login_welcome"
+        android:textSize="25sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_gravity="center"
+            android:text="Sign in to continue"
+            android:textSize="20sp" />
+        </LinearLayout>
 
     <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
         android:id="@+id/phone_auth_fields"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="vertical"
         android:paddingLeft="16dp"
         android:paddingRight="16dp">
@@ -33,15 +57,25 @@
                 android:id="@+id/field_phone_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter mobile no"
+                android:hint="Enter mobile no with country code(+91)"
+                android:layout_margin="5dp"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:backgroundTint="@color/colorPrimary"
                 android:inputType="phone" />
-
-            <EditText
-                android:id="@+id/field_verification_code"
+            <Button
+                android:id="@+id/button_start_verification"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="enter otp"
-                android:inputType="number" />
+                android:layout_weight="1.0"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/button_design"
+                android:text="s i g n  i n"
+
+                />
+
+
 
         </LinearLayout>
 
@@ -49,33 +83,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-
             android:weightSum="3.0">
 
-            <Button
-                android:id="@+id/button_start_verification"
+
+            <EditText
+                android:id="@+id/field_verification_code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:text="start"
-
-                />
+                android:hint="enter otp"
+                android:layout_margin="5dp"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:backgroundTint="@color/colorPrimary"
+                android:inputType="number" />
 
             <Button
                 android:id="@+id/button_verify_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.0"
-                android:text="verify"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/button_design"
+                android:text="v e r i f y"
                 />
 
-            <Button
-                android:id="@+id/button_resend"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.0"
-                android:text="resend"
-                />
+
         </LinearLayout>
 
     </LinearLayout>

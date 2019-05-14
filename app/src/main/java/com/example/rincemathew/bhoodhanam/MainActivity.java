@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -24,111 +25,72 @@ import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.concurrent.TimeUnit;
 
-public class MainActivity extends AppCompatActivity implements        View.OnClickListener {
-    EditText mPhoneNumberField, mVerificationField;
-    Button mStartButton, mVerifyButton, mResendButton;
+public class MainActivity extends AppCompatActivity{
+    EditText editTextPhone, editTextCode;
 
-    private FirebaseAuth mAuth;
-    private PhoneAuthProvider.ForceResendingToken mResendToken;
-    private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
-    String mVerificationId;
+    FirebaseAuth mAuth;
 
-
-
-    private static final String TAG = "PhoneAuthActivity";
+    String codeSent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FirebaseMessaging.getInstance().subscribeToTopic("NEWS");
-
-        mPhoneNumberField = (EditText) findViewById(R.id.field_phone_number);
-        mVerificationField = (EditText) findViewById(R.id.field_verification_code);
-
-
-        mStartButton = (Button) findViewById(R.id.button_start_verification);
-        mVerifyButton = (Button) findViewById(R.id.button_verify_phone);
-        mResendButton = (Button) findViewById(R.id.button_resend);
-
-        mStartButton.setOnClickListener(this);
-        mVerifyButton.setOnClickListener(this);
-        mResendButton.setOnClickListener(this);
-
         mAuth = FirebaseAuth.getInstance();
-        mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
 
+        editTextCode = findViewById(R.id.field_verification_code);
+        editTextPhone = findViewById(R.id.field_phone_number);
 
-
-            @Override            public void onVerificationCompleted(PhoneAuthCredential credential) {
-
-                Log.d(TAG, "onVerificationCompleted:" + credential);
-                signInWithPhoneAuthCredential(credential);
-
+        findViewById(R.id.button_start_verification).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendVerificationCode();
             }
+        });
 
-            @Override            public void onVerificationFailed(FirebaseException e) {
-                Log.w(TAG, "onVerificationFailed", e);
-                if (e instanceof FirebaseAuthInvalidCredentialsException) {
-                    mPhoneNumberField.setError("Invalid phone number.");
-                } else if (e instanceof FirebaseTooManyRequestsException) {
 
-                }
+        findViewById(R.id.button_verify_phone).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                verifySignInCode();
             }
+        });
+    }
 
-            @Override            public void onCodeSent(String verificationId,
-                                                        PhoneAuthProvider.ForceResendingToken token) {
+    private void verifySignInCode(){
+        if (editTextCode.getText().toString().equals("")){
+            Toast.makeText(getApplicationContext(),
+                    "Enter a Valid Verification Code ", Toast.LENGTH_LONG).show();
+        }else {
+            String code = editTextCode.getText().toString();
+            PhoneAuthCredential credential = PhoneAuthProvider.getCredential(codeSent, code);
+            signInWithPhoneAuthCredential(credential);
+        }
+//        String code = editTextCode.getText().toString();
+//        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(codeSent, code);
+//        signInWithPhoneAuthCredential(credential);
 
-                Log.d(TAG, "onCodeSent:" + verificationId);
-                mVerificationId = verificationId;
-                mResendToken = token;
-            }
-        };
     }
 
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override                    public void onComplete(@NonNull Task<AuthResult> task) {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Log.d(TAG, "signInWithCredential:success");
+                            //here you can open new activity
                             FirebaseUser user = task.getResult().getUser();
                             startActivity(new Intent(MainActivity.this, Main3Activity.class));
                             finish();
                         } else {
-                            Log.w(TAG, "signInWithCredential:failure", task.getException());
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
-                                mVerificationField.setError("Invalid code.");
+                                Toast.makeText(getApplicationContext(),
+                                        "Incorrect Verification Code ", Toast.LENGTH_LONG).show();
                             }
                         }
                     }
                 });
-    }
-
-
-    private void startPhoneNumberVerification(String phoneNumber) {
-
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                phoneNumber, 60,  TimeUnit.SECONDS,   this,  mCallbacks);        }
-
-    private void verifyPhoneNumberWithCode(String verificationId, String code) {
-        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationId, code);
-        signInWithPhoneAuthCredential(credential);
-    }
-
-    private void resendVerificationCode(String phoneNumber,
-                                        PhoneAuthProvider.ForceResendingToken token) {
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                phoneNumber, 60,   TimeUnit.SECONDS,  this,  mCallbacks, token);      }
-
-    private boolean validatePhoneNumber() {
-        String phoneNumber = mPhoneNumberField.getText().toString();
-        if (TextUtils.isEmpty(phoneNumber)) {
-            mPhoneNumberField.setError("Invalid phone number.");
-            return false;
-        }
-        return true;
     }
     @Override    public void onStart() {
         super.onStart();
@@ -139,29 +101,57 @@ public class MainActivity extends AppCompatActivity implements        View.OnCli
         }
     }
 
-    @Override    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.button_start_verification:
-                if (!validatePhoneNumber()) {
-                    return;
-                }
-                startPhoneNumberVerification(mPhoneNumberField.getText().toString());
-                break;
-            case R.id.button_verify_phone:
-                String code = mVerificationField.getText().toString();
-                if (TextUtils.isEmpty(code)) {
-                    mVerificationField.setError("Cannot be empty.");
-                    return;
-                }
+    private void sendVerificationCode(){
 
-                verifyPhoneNumberWithCode(mVerificationId, code);
-                break;
-            case R.id.button_resend:
-                resendVerificationCode(mPhoneNumberField.getText().toString(), mResendToken);
-                break;
+        String phone = editTextPhone.getText().toString();
+
+        if(phone.isEmpty()){
+            editTextPhone.setError("Phone number is required");
+            editTextPhone.requestFocus();
+            return;
         }
 
+        if(phone.length() < 10 ){
+            editTextPhone.setError("Please enter a valid phone");
+            editTextPhone.requestFocus();
+            return;
+        }
+        if(phone.length() < 12 ){
+            editTextPhone.setError("Please Add Country Code +91");
+            editTextPhone.requestFocus();
+            return;
+        }
+
+
+        PhoneAuthProvider.getInstance().verifyPhoneNumber(
+                phone,        // Phone number to verify
+                60,                 // Timeout duration
+                TimeUnit.SECONDS,   // Unit of timeout
+                this,               // Activity (for callback binding)
+                mCallbacks);        // OnVerificationStateChangedCallbacks
     }
+
+
+
+    PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+
+        @Override
+        public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
+
+        }
+
+        @Override
+        public void onVerificationFailed(FirebaseException e) {
+
+        }
+
+        @Override
+        public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
+            super.onCodeSent(s, forceResendingToken);
+
+            codeSent = s;
+        }
+    };
 
 
 }
