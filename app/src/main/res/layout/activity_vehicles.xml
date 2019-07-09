@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vehicles">
+    <LinearLayout
+        android:layout_weight="10"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="15dp"
+            android:layout_gravity="center"
+            android:text="വാഹനങ്ങൾ"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/auto"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/borderlayout"
+                android:text="ഓട്ടോറിക്ഷ"
+                android:gravity="start"
+                android:textSize="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/taxi"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/borderlayout"
+                android:text="ടാക്സി"
+                android:gravity="start"
+                android:textSize="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/tipper"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/borderlayout"
+                android:text="ടിപ്പർ"
+                android:gravity="start"
+                android:textSize="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/goods"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/borderlayout"
+                android:text="ഗുഡ്സ് ഓട്ടോ"
+                android:gravity="start"
+                android:textSize="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".emergency">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:layout_gravity="center"
+            android:text="Emergency"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/pothpolice"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="പോത്തുകല്ല് പോലീസ് സ്റ്റേഷൻ"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/kseb"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="KSEB    പോത്തുകല്ല്"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/nilaburfire"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="നിലമ്പൂർ ഫയർ ഫോഴ്സ് "
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/ksrtc"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="കെ എസ് ആർ ടി സി ഡിപ്പോ"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+
+            <LinearLayout
+                android:id="@+id/railway"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="റെയിൽവേ സ്റ്റേഷൻ"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/panchayat"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="പഞ്ചായത്ത്"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/muderi"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="മുണ്ടേരി ഫാം"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/agri"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="അഗ്രികൾച്ചർ ഇംപ്രൂവ്മെൻറ് സഹകരണ സംഘം"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</RelativeLayout>

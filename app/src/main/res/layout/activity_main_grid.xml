@@ -7,20 +7,33 @@
     android:layout_height="match_parent"
     tools:context=".MainGridActivity">
 
-    <LinearLayout
+    <RelativeLayout
+        android:gravity="center_vertical"
         android:layout_weight="10"
         android:background="@color/colorPrimary"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:src="@drawable/bhoodhanam"
-            android:layout_weight="1"
+        <TextView
+            android:paddingLeft="10dp"
+            android:text="ഭൂദാനം"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-    </LinearLayout>
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_settings_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
 
     <LinearLayout
         android:background="@color/white"
@@ -46,7 +59,7 @@
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/notificationspng"
+                    android:src="@drawable/d1notifications"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:backgroundTint="#00000000" />
@@ -56,11 +69,11 @@
                     android:layout_height="45dp"/>
 
                 <ImageButton
-                    android:id="@+id/banks"
+                    android:id="@+id/news"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/banks"
+                    android:src="@drawable/d1news"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:backgroundTint="#00000000" />
@@ -68,27 +81,27 @@
                 <View style="@style/Divider.Vertical"
                     android:layout_gravity="center"
                     android:layout_height="45dp"/>
-
                 <ImageButton
-                    android:id="@+id/clubs"
+                    android:id="@+id/emergency"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/clubs"
+                    android:src="@drawable/d1emergency"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:backgroundTint="#00000000" />
+
 
                 <View style="@style/Divider.Vertical"
                     android:layout_gravity="center"
                     android:layout_height="45dp"/>
 
                 <ImageButton
-                    android:id="@+id/auto"
+                    android:id="@+id/hospital"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/autorickshaw"
+                    android:src="@drawable/d1hospital"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:backgroundTint="#00000000" />
@@ -101,11 +114,11 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:id="@+id/taxi"
+                android:id="@+id/banks"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/taxi"
+                android:src="@drawable/d1bank"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:backgroundTint="#00000000" />
@@ -115,11 +128,11 @@
                 android:layout_height="45dp"/>
 
             <ImageButton
-                android:id="@+id/tipper"
+                android:id="@+id/shops"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/tipper"
+                android:src="@drawable/d1shops"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:backgroundTint="#00000000" />
@@ -129,11 +142,11 @@
                 android:layout_height="45dp"/>
 
             <ImageButton
-                android:id="@+id/goods"
+                android:id="@+id/train"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/goodsauto"
+                android:src="@drawable/d1train"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:backgroundTint="#00000000" />
@@ -143,11 +156,11 @@
                 android:layout_height="45dp"/>
 
             <ImageButton
-                android:id="@+id/hotel"
+                android:id="@+id/bus"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/hotels"
+                android:src="@drawable/d1bus"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:backgroundTint="#00000000" />
@@ -163,10 +176,25 @@
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/workers"
+                    android:src="@drawable/d1workers"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:backgroundTint="#00000000" />
+
+                <View style="@style/Divider.Vertical"
+                    android:layout_gravity="center"
+                    android:layout_height="45dp"/>
+                <ImageButton
+                    android:id="@+id/vahanagal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/d1vahanangal"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="#00000000" />
+
+
 
                 <View style="@style/Divider.Vertical"
                     android:layout_gravity="center"
@@ -177,7 +205,7 @@
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/blooddonors"
+                    android:src="@drawable/d1blood"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:backgroundTint="#00000000" />
@@ -186,22 +214,14 @@
                     android:layout_gravity="center"
                     android:layout_height="45dp"/>
 
-                <ImageButton
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/blank"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:backgroundTint="#00000000" />
-
 
 
                 <ImageButton
+                    android:id="@+id/sagadanakal"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/blank"
+                    android:src="@drawable/d1sangadanakal"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:backgroundTint="#00000000" />

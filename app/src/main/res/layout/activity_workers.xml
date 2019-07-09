@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Workers">
+
+    <LinearLayout
+        android:layout_weight="10"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="15dp"
+            android:layout_gravity="center"
+            android:text="തൊഴിലാളികൾ"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="ആശാരി"
+                android:textSize="40dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/vijesh"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="വിജേഷ്"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/bijil"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="ബിജിൽ"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+
+            <LinearLayout
+                android:id="@+id/premod"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="പ്രമോദ്"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/ullas"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="ഉല്ലാസ്"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/anoop"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="അനൂപ്"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+
+            <TextView
+                android:text="വയറിങ്"
+                android:textSize="40dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/thambi"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="തമ്പി"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/aneesh"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="അനീഷ്"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+
+            <TextView
+                android:text="തയ്യൽ"
+                android:textSize="40dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/manu"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="മനു"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/thambi2"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="തമ്പി"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <TextView
+                android:text="കെട്ടിടം(പ്ലാൻ വരക്കുന്നവർ)"
+                android:textSize="40dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/maniashari"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="മണി ആചാരി"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/shaji"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="ഷാജി"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+
+            <TextView
+                android:text="പടവ് പണിക്കാർ"
+                android:textSize="40dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/siddik"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="സിദ്ധിഖ്"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/sunil"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="സുനിൽ"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <TextView
+                android:text="വെൽഡിങ്"
+                android:textSize="40dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/sunil2"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="സുനിൽ"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/jayesh"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="ജയേഷ്"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/sudeesh"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="സുധീഷ്"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/kuttan"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="കുട്ടൻ"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+
+            <TextView
+                android:text="ഫാബ്രിക്കേഷൻ , എ സി പി"
+                android:textSize="40dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/ratheesh"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="രതീഷ്"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/anoop2"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="അനൂപ്"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/samjish"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="സംജീഷ്"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/kunnu"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="കുഞ്ഞു"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <TextView
+                android:text="കട്ടിള-ജനൽ"
+                android:textSize="40dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/dinoop"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="ദിനുപ്"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <TextView
+                android:text="ലോഡിങ്"
+                android:textSize="40dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/radhakhrishan"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="രാധാകൃഷ്ണൻ"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/sasidharan"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="ശശിധരൻ"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+            <LinearLayout
+                android:id="@+id/surendhran"
+                android:clickable="true"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:clickable="false"
+                    android:src="@drawable/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:clickable="false"
+                    android:text="സുരേന്ദ്രൻ"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View style="@style/Divider.Horizontal"
+                android:layout_gravity="end"
+                android:layout_width="300dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

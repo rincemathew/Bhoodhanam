@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="10dp"
+    android:layout_width="350dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="@color/black"
+        android:text="@string/information_msg"
+        android:layout_width="match_parent"
+        android:paddingBottom="30dp"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:buttonTint="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't Show Again" />
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="end"
+        android:text="close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
